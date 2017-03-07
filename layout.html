@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">  
+    <style>
+    
+      .slide-content{
+        display: inline-flex;
+        align-items: flex-start;
+        width: 100%;
+      }
+      
+      .left {
+        flex-grow: 2;
+      }
+      
+      .lab-content {
+        flex-grow:3;
+
+      }
+      .lab-slide-title, .lab-text{
+        border-color:blue;
+        border-style:solid;
+      }
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+        .content,.left {
+          width:100%
+        }
+        
+      }
+    </style>
+  </head>
+<body>
+  <div class="slide-content">
+    <div class="left" style=" background-color:#CCCCCC; border-style: solid; border-color:red"> IMAGE </div>
+    <div class="lab-content" style=" background-color:#CCCCCC; border-style:solid; border-color:green"> 
+      <h1 class="lab-slide-title" >
+        TITLE
+      </h1>
+      <p class="lab-text">
+        CONTENT
+      </p>
+    </div>
+  </div>
+</body>
+</html>
