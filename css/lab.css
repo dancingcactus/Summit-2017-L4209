@@ -1,0 +1,14 @@
+.left {
+  color: red;
+  float:left
+  
+}
+
+.right{
+  float:right;
+}
+
+slide-title: {
+  background-color: red;
+  color:red;
+}

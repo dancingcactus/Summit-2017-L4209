@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>l4209 Lab Guide</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/lab.css">
@@ -29,19 +29,364 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<div class="lab-slide-content">	
-						<div class="lab-left">Images</div>
-						<div class="lab-content">
-							<h1>Images</h1>
-							<p>Welcome</p>
+<!-- Introduction -->
+			<section>
+					<section>
+						Welcome to: 
+						<h3>Democratizing mobile data across your organization with Analysis Workspace</h3>
+					</section>
+					<section>
+						But we just like to call it <blockquote>"The Best Kept Secret of Analysis Workspace: App Analytics"</blockquote>
+					</section>
+					<section>
+					<p>Presenters:</p>
+					<div class="lab-slide-content">
+						<div >
+							<img src="assets/justin_grover.jpg"/>
+							<p>Justin Grover</p>
+						</div>
+						<div>
+							<img src="assets/jmoon-profile-web-281.jpg"/>
+							<p>Jonny Moon</p>
 						</div>
 					</div>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+								This is an interactive lab guide 
+								* Use the arrows to navigate 
+								* Down will take you deeper into each section
+								* Right will move you to a new section
+								* If you push o (oh not zero) it will zoom you out
+								
+						</script>
+					</section>
+					<section>
+						<p>Let's Get Started: </p>
+						<p>Login to: <a href="https://my.omniture.com/login/?company=Justin%20Grover%20Demo&username=l4209">my.omniture.com</a> </p>
+					</section>
+					<section>
+						<h3>House Keeping: </h3>
+					  <p> Please set dates to:<br/>
+						<span class="date">July 1st 2016 - December 31st 2016</span>
+						<p> Please set the report suite to </p><p>we.Media App, your #1 source of fake news</p>
+					</section>
 				</section>
-				<section>Slide 2</section>
-				<section>Slide 3</section>
-			</div>
+<!-- Section #1 -->
+				<section>
+					<section>
+						<p class="lab-section-number">Section #1: </p>
+						<p class="lab-section-title">Your Mobile App Data is already in workspace </p>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+								Sample of data available 
+								
+								|Dimensions | Metrics |
+								|---- | ---- |
+								| App ID | First Launches |
+								| Days since first use | Launches |
+								| Days since last use | Crashes |
+								| Operating System Version | 
+								| Device Name | 
+								| Point of Interest Name |
+
+								And many more see the <a href="https://marketing.adobe.com/resources/help/en_US/mobile/ios/metrics.html" target="_blank">Docs</a>
+						</script>
+					</section>
+					<section>
+						<p> Try it yourself:</p>
+						<p> Create a project that gives an overview of the Mobile App </p>
+					</section>
+				</section>
+				
+	<!-- Cohort Table -->			
+				<section>
+					<section>
+						<h3>Cohort Table</h3>
+						<img src="assets/cohort_intro.png"/>
+						Allows you to see how people frequently return to your app under different conditions.
+					</section>
+					<section>
+						<div class="lab-slide-content">	
+							<div class="lab-left"><img src="assets/cohort_parts.gif"/></div>
+							<div class="lab-content">
+								<h3>Anatomy of a Cohort Table</h3>
+								<ol>
+									<li>Granularity - eg. Day, Week, Month</li>
+									<li>Inclusion Metric - What does a user have to do to be included in that cohort (Column 4)</li>
+									<li>Return Metric - What does the user have to do to be included as a return (Colummns 5)</li>
+									<li>Included - The number of people included in the cohort for that time period</li>
+									<li>Returned - The number of people who returned each time period</li>
+								</ol>
+							</div>
+						</div>
+					</section>
+					<!-- Cohort Example #1 -->
+					<section>
+						<p><span class="step">Example #1:</span></p>
+						<p>Of the people who launched my app month how many people are using it after 2 months?</p>
+					</section>
+					<section>
+						<img src="assets/cohort_table.gif"/>
+						<p> <span class="step">Step #1:</span> Add a Cohort Table to the workspace.</p>
+					</section>
+					<section>
+						<img src="assets/cohort_table_launch_launch.gif"/>
+						<p> <span class="step">Step #2:</span> Add launches as both the inclusion metric and the return metric then run the report</p> 
+					</section>
+					<section>
+						<img src="assets/cohort_launch_launch_results.png"/>
+						<p> <span class="step">Step #3:</span> Analyze the results</p> 
+					</section>
+					<!-- Cohort Example #2 -->
+					<section>
+						<p><span class="step">Example #2:</span></p>
+						<p>Of people who install the app how many are using it after 4 weeks?</p>
+					</section>
+					<section>
+						<img src="assets/cohort_table.gif"/>
+						<p> <span class="step">Step #1:</span> Add a new cohort table</p>
+					</section>
+					<section>
+						<img src="assets/cohort_table_firstlaunch_launch.gif"/>
+						<p> <span class="step">Step #2:</span>
+							 <ul>
+								<li>Change the granularity to week</li> 
+								<li>Add First Launches as the inclusion metric </li>
+								<li>Add Launches as the return metric </li>
+								<li>Run the report</li>
+							</p> 
+					</section>
+					<section data-markdown >	
+						<script type="text/template">
+							|Questions|
+							|----|
+							|What is this chart telling me that is different from the previous example? (Hint:See the definition of First Launch in the <a href="https://marketing.adobe.com/resources/help/en_US/mobile/ios/metrics.html" target="_blank">Docs</a>)|
+							|What would happen if I changed the return metric to Launches > 2? |
+							|How would you use this information to optimize your app? |
+						</script>
+					</section>
+					<!-- Cohort Example #3 --> 
+					<section>
+						<p><span class="step">Example #3:</span></p>
+						<p>Do people who crash that app come back?</p>
+					</section>
+					<section>
+						<img src="assets/cohort_table.gif"/>
+						<p> <span class="step">Step #1:</span> Add a new cohort table</p>
+					</section>
+					<section>
+						<img src="assets/cohort_table_crashes_launch.gif"/>
+						<p> <span class="step">Step #2:</span>
+							 <ul>
+								<li>Change the granularity to day</li> 
+								<li>Add Crashes as the inclusion metric </li>
+								<li>Add Launches as the return metric </li>
+								<li>Run the report</li>
+							</p> 
+					</section>
+					<section data-markdown >	
+						<script type="text/template">
+							|Questions|
+							|----|
+							|What percent of people come back?|
+							|How would you use this to prioritize your App Backlog?|
+							|What types of things could you do to re-engage users who didn't come back?|
+						</script>
+					</section>
+				</section>
+	<!-- Fallout Section -->
+				<section>
+					<section>
+						<h3>Fallout</h3>
+						<img src="assets/fallout_intro.png"/>
+						Measure funnels and workflows precisely
+					</section>
+					<section>
+						<div class="lab-left"><img src="assets/fallout_anatomy.jpg"/></div>
+						<div class="lab-content">
+							<h3>Anatomy of Fallout</h3>
+							<ol>
+								<li>Touchpoints Dropzone - Can add dimension items, metrics or segments</li>
+								<li>Segment Dropzone - Compare fallout for multiple groups by adding segments</li>
+								<li>Fallout Container - Lets you set whether funnel should happen in a visit or longer</li>
+								<li>Show All Visits -- Should the fallout start with all visits (Everyone) or the first touchpoint</li>
+							</ol>
+						</div>
+					</section>
+					<!-- Fallout Example #1 --> 
+					<section>
+						<p><span class="step">Example #1:</span></p>
+						<p>How many people make it from the Welcome Screen (Page) to the Technology Screen (Page) and eventually subscribe?</p>
+					</section>
+					<section>
+						<img src="assets/fallout_add.gif"/>
+						<p> <span class="step">Step #1:</span> Add a Fallout visulaization</p>
+					</section>
+					<section>
+						<img src="assets/fallout_build_1.gif"/>
+						<p> <span class="step">Step #2:</span>
+						 Add the following steps to the Fallout from the page element </p>
+							 <ul>
+								<li>Welcome</li> 
+								<li>Catalog: Technology </li>
+							</ul>							
+					</section>
+					<section>	
+						<img src="assets/fallout_build_2.gif"/>
+						<p> <span class="step">Step #3:</span>
+					 	Add the subscriptions event </p>
+				</section>
+				<section data-markdown >	
+					<script type="text/template">
+						|Questions|
+						|----|
+						|What do the green bars show?|
+						|What is the number in the gray bars?|
+						|If you change the fallout setting to visit, why does the conversion rate go down?|
+					</script>
+				</section>
+				<!-- Fallout Example #2 -->
+				<section>
+					<p><span class="step">Example #2:</span></p>
+					<p>How does the fallout differ for different groups?</p>
+				</section>
+				<section>
+					<img src="assets/fallout_segment.gif"/>
+					<p> <span class="step">Step #1:</span> From the Acquisition Source dimension add the following items</p>
+					<ul>
+						<li>Apple Store</li>
+						<li>Google</li>
+						<li>Facebook</li>
+					</ul>
+					
+				</section>
+				<section data-markdown >	
+					<script type="text/template">
+						|Questions|
+						|----|
+						|Which source has the best conversion rate?|
+						|What happens when you remove one of the steps?|
+					</script>
+				</section>
+				<!-- Fallout Example #3 -->
+				<section>
+					<p><span class="step">Example #3:</span></p>
+					<p>Of the people who fallout and don't subscribe what do they do instead?</p>
+				</section>
+				<section>
+					<img src="assets/fallout_breakdown.gif"/>
+					<p> <span class="step">Step #1:</span> Break down fallout for Apple Store on Page: Technology</p>
+				</section>
+				<section data-markdown >	
+					<script type="text/template">
+						|Questions|
+						|----|
+						|How would you describe fallout vs fallthrough?|
+						|What other dimensions would you look at to see what they did?|
+					</script>
+				</section>
+				
+			</section>
+	<!-- Flow Section -->
+			<section>
+				<section>
+				<h3>Flow</h3>
+				<img src="assets/flow_intro.png"/>
+				Discover how people use your app vs how you think they should use your app
+				</section>
+				<section>
+					
+						<img src="assets/flow_part.png"/>
+							<h3>Anatomy of Flow</h3>
+							<ol>
+								<li>Entry Dimension - Start the flow from the first interaction with that visit/visitor</li>
+								<li>Dimension or Item - Starts the flow from the top items of a dimension or single item and goes both ways</li>
+								<li>Exit Dimension - Flows backward from the last interaction of a visit/visitor</li>
+								<li>Flow Settings - Specifies if flow should be restricted to the same visit or should be across the life of the visitor</li>
+							</ol>
+				</section>
+				<!-- Flow Example #1 -->
+				<section>
+					<p><span class="step">Example #1:</span></p>
+					<p>Where do people go after they see the Navigation Screen of the App?</p>
+				</section>
+				<section>
+					<img src="assets/flow_add.gif"/>
+					<p> <span class="step">Step #1:</span> Add a Flow visulaization</p>
+				</section>
+				<section>
+					<img src="assets/flow_page.gif"/> 
+					<p> <span class="step">Step #2:</span> Add a "Page" to the middle drop zone</p>
+				</section>
+				<section>
+					<img src="assets/flow_expand.gif"/> 
+					<p> <span class="step">Step #3:</span> Expand a few branches. </p>
+					<p class="hint">Hint: You can right click and expand all</p>
+				</section>
+				<section data-markdown >	
+					<script type="text/template">
+						|Questions|
+						|----|
+						|Which screen has the highest exit rate?|
+						|What screens are most likely to lead to the subscribe screen?|
+					</script>
+				</section>
+				<!-- Flow Example #2-->
+				<section>
+					<p><span class="step">Example #2:</span></p>
+					<p>Of people who enter my app through the Apple App Store (deep links) where do they land in my app?</p>
+				</section>
+				<section>
+					<img src="assets/flow_add.gif"/>
+					<p> <span class="step">Step #1:</span> Add a Flow visulaization</p>
+				</section>
+				<section>
+					<img src="assets/flow_acquisition.gif"/> 
+					<p> <span class="step">Step #2:</span> Add a Acquisition Source to the first drop zone</p>
+				</section>
+				<section>
+					<img src="assets/flow_acquisition_page.gif"/> 
+					<p> <span class="step">Step #3:</span> Add the "Page" dimension to the right of the last column</p>
+				</section>
+				<section data-markdown >	
+					<script type="text/template">
+						|Questions|
+						|----|
+						|Where does the Apple App Store (deep links) land most people?|
+						|How does that compare with Google (App Indexing)?|
+						|What other dimensions would be useful to look at after Acquisition Source?|
+					</script>
+				</section>
+					<!-- Flow Example #3 -->
+					<section>
+						<p><span class="step">Example #3:</span></p>
+						<p>How do paths to the subscription screen compare to premium subscription screen compare overtime?</p>
+					</section>
+					<section>
+						<img src="assets/flow_trend.gif"/>
+						<p> <span class="step">Step #1:</span> Right click on a node and hit trend</p>
+					</section>
+					<section data-markdown >	
+						<script type="text/template">
+							|Questions|
+							|----|
+							|What is Analytics Workspace doing under the covers? Hint: Look at the hidden table created for the trend|
+							|When would you trend a flow vs a fallout?|
+						</script>
+				</section>
+			</section>
+				<section>
+					<section>
+						Curating Data 
+					</section>
+				</section>
+				
+
+			</section>
 		</div>
+	</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
