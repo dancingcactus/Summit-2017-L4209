@@ -19,6 +19,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .lab-slide-content {
   flex-grow: 3; }
 
+.reveal .bonus {
+  background-image: url("../../assets/bonus.png");
+  background-size: 25%;
+  background-position: left top;
+  background-repeat: no-repeat; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/

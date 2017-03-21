@@ -64,7 +64,13 @@ section.has-dark-background {
 	flex-grow: 3
 }
 
-
+.reveal .bonus{
+	background-image: url("../../assets/bonus.png");
+	background-size:25%;
+	background-position:left top;
+	background-repeat:no-repeat;
+	
+}
 
 // Theme template ------------------------------
 @import "../template/theme";
